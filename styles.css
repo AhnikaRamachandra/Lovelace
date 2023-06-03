@@ -63,12 +63,13 @@ transition: all 0.3s ease 0s;
     font-family: 'Great Vibes', cursive;
    font-size: 5rem;
    margin: 40px 0;
-   padding: 0;
+   padding:0;
+   font-weight: 400;
 }
 .love p{
   color:#dd189b ;
-margin: 0;
-padding: 0px 0 ;
+margin: 0 ;
+padding: 0px 0px ;
 }
 .btn button, a{
     margin: 30px 0;
@@ -98,6 +99,7 @@ display: flex;
    font-family: 'Great Vibes', cursive;
   font-size: 5rem;
  padding: 10px;
+ font-weight: 400;
 }
 .about  p {
     margin: 10px;
@@ -122,7 +124,7 @@ color:#fa06a9 ;
     color: #da0b3be1;
     font-family: 'Great Vibes', cursive;
    font-size: 5rem;
-   font-weight: 800;
+   font-weight: 400;
 }
 .card{
     display: flex;
@@ -195,20 +197,33 @@ color:#fa06a9 ;
 }
 .um{
     display: flex;
+    margin: 10px 0;
+    padding-bottom: 0;
 }
-footer {
-    background-color:#d9d9d9 ;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  footer p {
-    color:#da0b3be1 ;
-    font-size: 14px;
-    margin: 0;
+.service img{
+  height: 40%;
+  width: 30%;
   }
  
-  
+    .services{
+       justify-content: space-between; 
+    display: flex;
+        
+    }
+    .services h2{
+       margin: 10px  30px;
+       color: #da0b3be1;
+       font-family: 'Great Vibes', cursive;
+      font-size: 5rem;
+     padding: 10px;
+     font-weight: 400;
+    }
+    .service  p {
+        margin: 10px;
+    padding: 10px;
+    display: inline;
+    color:#fa06a9 ;
+    } 
   
   
   /*contact*/
@@ -229,6 +244,7 @@ footer {
   }
   form{
     max-width: 350px;
+    margin-top: 0;
   margin: 0 30px ;
   
   }
@@ -248,14 +264,25 @@ border: 2px solid #da69abe1 ;
     color: #d62e44e1;
     font-family: 'Great Vibes', cursive;
    font-size: 5rem;
-   font-weight: 800;
+   font-weight: 400;
+  }
+  span h2{
+    font-weight: 400;
+    font-size: 40px;
+    color:#c710aee1 ;
+    margin: 0px 0;
+    padding: 70px ;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
   .contact-left-col span h1{
     color:#c710aee1 ;
     margin: 0 50px;
-    padding: 30px;
+    padding: 0px;
     font-family: 'Great Vibes', cursive;
     font-size: 2.5rem;
+    font-weight: 400;
   }
   #er{
     display: flex;
@@ -275,6 +302,7 @@ border: 2px solid #da69abe1 ;
     color: #c710aee1;
     font-weight: 1000;
     font-size: 0.9rem;
+    
   }
   .btn-boxe {
     width: 100;
@@ -293,11 +321,91 @@ border: 2px solid #da69abe1 ;
       
       
     }
+    footer {
+      background-color:#d9d9d9 ;
+      padding: 10px 0;
+      text-align: center;
+      margin: 0;
+    }
+    
+    footer p {
+      color:#da0b3be1 ;
+      font-size: 14px;
+      margin: 0;
+    }
+   
     #foot{
-     padding: 0px 0 30px;   
+     padding: 0px 0 0px;   
     }
     hr{
         width: 100%;
         border: 0;
         border-top: 1px solid #da69abe1;
+    }
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .container{
+      max-width: 1770px;
+      margin: auto;
+    }
+    .footer{
+      padding: 70px 0;
+    }
+    .footer-col{
+      width: 25%;
+      padding: 0 1px;
+      margin: 0;
+    }
+    ul{
+      list-style: none;
+    }
+    .footer-col h4{
+      font-size:28px ;
+      color: #d62e44e1;
+      font-family: 'Great Vibes', cursive;
+      margin-bottom:30px ;
+      font-weight: 400;
+      position: relative;
+
+    }
+    .footer-col h4::before{
+      content: '';
+      position: absolute;
+      left: 120px;
+      bottom:-10px ;
+      background-color: #aa4689;
+      height: 2px;
+      box-sizing: border-box;
+      width: 70px;
+    }
+    .footer-col ul li:not(:last-child){
+      margin-bottom: 1px;
+      
+    }
+    .footer-col ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+      padding-right: 18px;
+    }
+    .footer-col .social-links a{
+      display:inline-block ;
+      height: 40px;
+      width:40px ;
+      margin-right: 0 ;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+    @media(max-width:767px){
+      .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+      }
     }
